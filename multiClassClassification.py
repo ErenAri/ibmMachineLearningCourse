@@ -126,11 +126,11 @@ K=len(classes)
 K*(K-1)/2
 
 pairs=[]
-left_overs=classes_.copy()
+left_overs=classes.copy()
 #list used for classifiers 
 my_models=[]
 #iterate through each class
-for class_ in classes_:
+for class_ in classes:
     #remove class we have seen before 
     left_overs.remove(class_)
     #the second class in the pair
